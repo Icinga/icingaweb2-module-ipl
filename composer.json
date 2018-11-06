@@ -1,0 +1,29 @@
+{
+    "name": "icinga/icingaweb2-module-ipl",
+    "type": "project",
+    "homepage": "https://github.com/Icinga/icingaweb2-module-ipl",
+    "config": {
+        "sort-packages": true
+    },
+    "repositories": [{
+        "type": "vcs",
+        "url": "https://github.com/Icinga/ipl-stdlib",
+        "no-api":true
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/Icinga/ipl-html",
+        "no-api":true
+    }, {
+        "type": "vcs",
+        "url": "https://github.com/Icinga/ipl-sql",
+        "no-api":true
+    }],
+    "require": {
+        "php": ">=5.4.0",
+        "ipl/stdlib": "dev-master",
+        "ipl/html": "dev-master",
+        "ipl/sql": "dev-master"
+    },
+    "require-dev": {
+    }
+}
