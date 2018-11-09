@@ -1,5 +1,5 @@
-Name: Gipfl Bundle
-Version: v0.1.0
-Description: Gipfl provides bleeding-edge libraries
+Name: IPL Bundle
+Version: v0.1.1
+Description: The Icinga PHP library
  This repository ships libraries useful for Icinga Web 2 modules. Please download
  the latest release and install it like any other module.
