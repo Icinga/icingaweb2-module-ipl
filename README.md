@@ -28,7 +28,7 @@ REPO="https://github.com/Icinga/icingaweb2-module-ipl" \
 && MODULES_PATH="/usr/share/icingaweb2/modules" \
 && MODULE_VERSION=0.1.1 \
 && mkdir -p "$MODULES_PATH" \
-&& git clone ${REPO} "${MODULES_PATH}/ipl"
+&& git clone ${REPO} "${MODULES_PATH}/ipl" --branch v${MODULE_VERSION}
 icingacli module enable ipl
 ```
 
