@@ -27,9 +27,9 @@ find vendor/ -type f -name "*.php" \
  | grep -v '/example/' \
  | grep -v '/tests/' \
  | grep -v '/test/' \
- | xargs git add -f
-find vendor/ -type f -name LICENSE | xargs git add -f
-sed -i "s/^Version:.*/Version: v$VERSION/" module.info
+ | xargs -L1 git add -f
+find vendor/ -type f -name LICENSE | xargs -L1 git add -f
+sed -i.bak "s/^Version:.*/Version: v$VERSION/" module.info && rm -f module.info.bak
 git add module.info
 git commit -m "Version v$VERSION"
 
