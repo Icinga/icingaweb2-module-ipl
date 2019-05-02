@@ -5,14 +5,14 @@ This module ships the new Icinga PHP library. Please download the latest
 release and install it like any other module.
 
 > **HINT**: Do NOT install the GIT master, it will not work! Checking out a
-> branch like `stable/0.2.0` or a tag like `v0.2.0` is fine.
+> branch like `stable/0.2.1` or a tag like `v0.2.1` is fine.
 
 Sample Tarball installation
 ---------------------------
 
 ```sh
 MODULE_NAME=ipl
-MODULE_VERSION=v0.2.0
+MODULE_VERSION=v0.2.1
 MODULES_PATH="/usr/share/icingaweb2/modules"
 MODULE_PATH="${MODULES_PATH}/${MODULE_NAME}"
 RELEASES="https://github.com/Icinga/icingaweb2-module-${MODULE_NAME}/archive"
@@ -27,7 +27,7 @@ Sample GIT installation
 
 ```sh
 MODULE_NAME=ipl
-MODULE_VERSION=v0.2.0
+MODULE_VERSION=v0.2.1
 REPO="https://github.com/Icinga/icingaweb2-module-${MODULE_NAME}"
 MODULES_PATH="/usr/share/icingaweb2/modules"
 git clone ${REPO} "${MODULES_PATH}/${MODULE_NAME}" --branch "${MODULE_VERSION}"
@@ -47,4 +47,4 @@ Developer Documentation
 
 e.g.
 
-    ./bin/make-release.sh 0.2.0
+    ./bin/make-release.sh 0.2.1
