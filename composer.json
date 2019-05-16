@@ -2,6 +2,7 @@
     "name": "icinga/icingaweb2-module-ipl",
     "type": "project",
     "homepage": "https://github.com/Icinga/icingaweb2-module-ipl",
+    "license": "MIT",
     "config": {
         "sort-packages": true,
         "platform": {
