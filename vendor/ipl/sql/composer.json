@@ -1,0 +1,50 @@
+{
+  "name": "ipl/sql",
+  "type": "library",
+  "description": "Icinga PHP Library - SQL abstraction layer",
+  "keywords": ["sql", "database"],
+  "homepage": "https://github.com/Icinga/ipl-sql",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Alexander A. Klimov",
+      "email": "alexander.klimov@icinga.com",
+      "homepage": "https://github.com/Al2Klimov",
+      "role": "Developer"
+    },
+    {
+      "name": "Eric Lippmann",
+      "email": "eric.lippmann@icinga.com",
+      "homepage": "https://github.com/lippserd",
+      "role": "Developer"
+    },
+    {
+      "name": "Thomas Gelf",
+      "email": "thomas.gelf@icinga.com",
+      "homepage": "https://github.com/Thomas-Gelf",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "ext-pdo": "*",
+    "ipl/stdlib": ">=0.1"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.9.1",
+    "phpunit/phpunit": "^5.7 || ^4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "ipl\\Sql\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "ipl\\Tests\\Sql\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
