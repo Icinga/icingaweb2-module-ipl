@@ -8,6 +8,12 @@ if [[ -z $VERSION ]]; then
   exit 1
 fi
 
+function fail {
+  local msg="$1"
+  echo "ERROR: $msg"
+  exit 1
+}
+
 TAG=$(git tag | grep -c "$VERSION")
 
 if [[ "$TAG" -ne "0" ]]; then
@@ -20,8 +26,8 @@ BRANCH="stable/$VERSION"
 git checkout -b "$BRANCH"
 git rm -rf vendor
 rm -rf vendor
-rm composer.lock
-composer install
+rm -f composer.lock
+composer install || fail "composer install failed"
 find vendor/ -type f -name "*.php" \
  | grep -v '/examples/' \
  | grep -v '/example/' \
@@ -31,11 +37,12 @@ find vendor/ -type f -name "*.php" \
 find vendor/ -type f -name LICENSE | xargs -L1 git add -f
 sed -i.bak "s/^Version:.*/Version: v$VERSION/" module.info && rm -f module.info.bak
 git add module.info
+git add composer.lock
 git commit -m "Version v$VERSION"
 
-rm -f composer.lock
 rm -rf vendor
 git checkout vendor
+composer validate --no-check-all --strict || fail "Composer validate failed"
 
 git tag -a v$VERSION -m "Version v$VERSION"
 echo "Finished, tagged v$VERSION"
