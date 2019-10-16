@@ -1,5 +1,5 @@
 Name: IPL Bundle
-Version: dev-master
+Version: v0.4.0
 Description: The Icinga PHP library
  This repository ships libraries useful for Icinga Web 2 modules. Please download
  the latest release and install it like any other module.
