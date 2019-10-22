@@ -20,7 +20,8 @@
         "guzzlehttp/psr7": "^1.5",
         "ipl/html": ">=0.2.1",
         "ipl/sql": "dev-master",
-        "ipl/stdlib": ">=0.2"
+        "ipl/stdlib": ">=0.2",
+        "ipl/web": "dev-master"
     },
     "require-dev": {
     }
