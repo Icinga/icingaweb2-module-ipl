@@ -24,5 +24,13 @@
         "ipl/web": "dev-master"
     },
     "require-dev": {
+    },
+    "autoload": {
+        "psr-0": { "AssetLoader": "" }
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "AssetLoader::update"
+        ]
     }
 }
