@@ -21,7 +21,8 @@
         "ipl/html": ">=0.2.1",
         "ipl/sql": "dev-master",
         "ipl/stdlib": ">=0.2",
-        "ipl/web": "dev-master"
+        "ipl/web": "dev-master",
+        "ipl/orm": "dev-master"
     },
     "require-dev": {
     },
