@@ -10,19 +10,15 @@
             "php": "5.6.3"
         }
     },
-    "repositories": [{
-        "type": "vcs",
-        "url": "https://github.com/Icinga/ipl-sql",
-        "no-api":true
-    }],
     "require": {
-        "php": ">=5.4.0",
+        "php": ">=5.6.0",
         "guzzlehttp/psr7": "^1.5",
-        "ipl/html": ">=0.2.1",
-        "ipl/sql": "dev-master",
-        "ipl/stdlib": ">=0.2",
-        "ipl/web": "dev-master",
-        "ipl/orm": "dev-master"
+        "ipl/html": ">=0.3.0",
+        "ipl/orm": ">=0.1.0",
+        "ipl/sql": ">=0.1.0",
+        "ipl/stdlib": ">=0.5.0",
+        "ipl/validator": ">=0.1.0",
+        "ipl/web": ">=0.1.0"
     },
     "require-dev": {
     },
