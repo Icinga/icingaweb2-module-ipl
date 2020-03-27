@@ -1,3 +1,4 @@
+Module: ipl
 Name: IPL Bundle
 Version: dev-master
 Description: The Icinga PHP library
