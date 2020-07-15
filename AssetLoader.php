@@ -2,6 +2,11 @@
 
 class AssetLoader
 {
+    public static $awesomeVendorFiles = [
+        'asset/static/font/awesome' => 'vendor/fortawesome/font-awesome/webfonts',
+        'asset/css'                 => 'vendor/fortawesome/font-awesome/css/fontawesome.css'
+    ];
+
     public static function update()
     {
         if (is_dir('asset')) {
@@ -45,6 +50,36 @@ class AssetLoader
                     } elseif ($asset->isFile()) {
                         symlink($asset->getPathname(), $relativePath);
                     }
+                }
+            }
+        }
+
+        // Register font-awesome files as assets
+        foreach (static::$awesomeVendorFiles as $targetPath => $sourcePath) {
+            $sourcePath = realpath($sourcePath);
+            if (! $sourcePath) {
+                continue;
+            }
+
+            if (is_dir($sourcePath)) {
+                if (! is_dir($targetPath)) {
+                    mkdir($targetPath, 0755, true);
+                }
+
+                $awesomeFiles = new FilesystemIterator($sourcePath);
+            } else { // is_file($sourcePath)
+                $awesomeFiles = [new SplFileInfo($sourcePath)];
+                $sourcePath = $awesomeFiles[0]->getPath();
+            }
+
+            foreach ($awesomeFiles as $awesomeFile) {
+                /** @var SplFileInfo $awesomeFile */
+                $relativePath = join(DIRECTORY_SEPARATOR, [$targetPath, ltrim(
+                    substr($awesomeFile->getPathname(), strlen($sourcePath)),
+                    '/\\'
+                )]);
+                if (! file_exists($relativePath) && $awesomeFile->isFile()) {
+                    symlink($awesomeFile->getPathname(), $relativePath);
                 }
             }
         }
