@@ -22,7 +22,7 @@ if [[ "$TAG" -ne "0" ]]; then
   exit 1
 fi
 
-BRANCH="stable/$VERSION"
+BRANCH="nightly/master"
 git checkout -b "$BRANCH"
 git rm -rf vendor
 rm -rf vendor
