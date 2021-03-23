@@ -1,0 +1,519 @@
+[
+    {
+        "name": "evenement/evenement",
+        "version": "v2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/igorw/evenement.git",
+            "reference": "6ba9a777870ab49f417e703229d53931ed40fd7a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/igorw/evenement/zipball/6ba9a777870ab49f417e703229d53931ed40fd7a",
+            "reference": "6ba9a777870ab49f417e703229d53931ed40fd7a",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^6.0||^5.7||^4.8.35"
+        },
+        "time": "2017-07-17T17:39:19+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Evenement": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Igor Wiedler",
+                "email": "igor@wiedler.ch"
+            }
+        ],
+        "description": "Événement is a very simple event dispatching library for PHP",
+        "keywords": [
+            "event-dispatcher",
+            "event-emitter"
+        ]
+    },
+    {
+        "name": "fortawesome/font-awesome",
+        "version": "5.15.3",
+        "version_normalized": "5.15.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/FortAwesome/Font-Awesome.git",
+            "reference": "d79d85c3fad85ad1885e87ed558f4afd6fce8289"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/d79d85c3fad85ad1885e87ed558f4afd6fce8289",
+            "reference": "d79d85c3fad85ad1885e87ed558f4afd6fce8289",
+            "shasum": ""
+        },
+        "time": "2021-03-16T18:57:33+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "CC-BY-4.0",
+            "OFL-1.1",
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Travis Chase",
+                "homepage": "http://twitter.com/supercodepoet"
+            },
+            {
+                "name": "Dave Gandy",
+                "homepage": "http://twitter.com/davegandy"
+            },
+            {
+                "name": "Rob Madole",
+                "homepage": "http://twitter.com/robmadole"
+            },
+            {
+                "name": "Jory Raphael",
+                "homepage": "http://twitter.com/sensibleworld"
+            },
+            {
+                "name": "Geremia Taglialatela",
+                "homepage": "http://twitter.com/gtagliala"
+            },
+            {
+                "name": "Brian Talbot",
+                "homepage": "http://twitter.com/talbs"
+            },
+            {
+                "name": "Mike Wilkerson",
+                "homepage": "http://twitter.com/mw77"
+            }
+        ],
+        "description": "The iconic font, CSS, and SVG framework",
+        "homepage": "https://fontawesome.com",
+        "keywords": [
+            "FontAwesome",
+            "awesome",
+            "bootstrap",
+            "font",
+            "icon",
+            "svg"
+        ]
+    },
+    {
+        "name": "guzzlehttp/psr7",
+        "version": "1.8.1",
+        "version_normalized": "1.8.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/psr7.git",
+            "reference": "35ea11d335fd638b5882ff1725228b3d35496ab1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/psr7/zipball/35ea11d335fd638b5882ff1725228b3d35496ab1",
+            "reference": "35ea11d335fd638b5882ff1725228b3d35496ab1",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "psr/http-message": "~1.0",
+            "ralouphie/getallheaders": "^2.0.5 || ^3.0.0"
+        },
+        "provide": {
+            "psr/http-message-implementation": "1.0"
+        },
+        "require-dev": {
+            "ext-zlib": "*",
+            "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.8 || ^9.3.10"
+        },
+        "suggest": {
+            "laminas/laminas-httphandlerrunner": "Emit PSR-7 responses"
+        },
+        "time": "2021-03-21T16:25:00+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.7-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GuzzleHttp\\Psr7\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            },
+            {
+                "name": "Tobias Schultze",
+                "homepage": "https://github.com/Tobion"
+            }
+        ],
+        "description": "PSR-7 message implementation that also provides common utility methods",
+        "keywords": [
+            "http",
+            "message",
+            "psr-7",
+            "request",
+            "response",
+            "stream",
+            "uri",
+            "url"
+        ]
+    },
+    {
+        "name": "ipl/html",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Icinga/ipl-html.git",
+            "reference": "b4f900150d4f0c05977b1b9b06d73008f416344f"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Icinga/ipl-html/zipball/b4f900150d4f0c05977b1b9b06d73008f416344f",
+            "reference": "b4f900150d4f0c05977b1b9b06d73008f416344f",
+            "shasum": ""
+        },
+        "require": {
+            "ipl/stdlib": ">=0.5.0",
+            "ipl/validator": ">=0.1.0",
+            "php": ">=5.6.0",
+            "psr/http-message": "~1.0"
+        },
+        "time": "2021-03-09T07:45:43+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "ipl\\Html\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Icinga PHP Library - HTML abstraction layer",
+        "homepage": "https://github.com/Icinga/ipl-html",
+        "keywords": [
+            "html"
+        ]
+    },
+    {
+        "name": "ipl/orm",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Icinga/ipl-orm.git",
+            "reference": "a1f4639ba012412793c0ffcd5aa1942696e75d3a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Icinga/ipl-orm/zipball/a1f4639ba012412793c0ffcd5aa1942696e75d3a",
+            "reference": "a1f4639ba012412793c0ffcd5aa1942696e75d3a",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "ipl/sql": ">=0.2.0",
+            "ipl/stdlib": ">=0.9.0",
+            "php": ">=5.6.0"
+        },
+        "require-dev": {
+            "ext-pdo_sqlite": "*"
+        },
+        "time": "2021-03-19T13:58:07+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "ipl\\Orm\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Icinga PHP Library - ORM",
+        "homepage": "https://github.com/Icinga/ipl-orm",
+        "keywords": [
+            "database",
+            "orm",
+            "sql"
+        ]
+    },
+    {
+        "name": "ipl/sql",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Icinga/ipl-sql.git",
+            "reference": "e8cffd13f117d0af44d9b91635914c3b39f829fe"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Icinga/ipl-sql/zipball/e8cffd13f117d0af44d9b91635914c3b39f829fe",
+            "reference": "e8cffd13f117d0af44d9b91635914c3b39f829fe",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "ipl/stdlib": ">=0.5.0",
+            "php": ">=5.6.0"
+        },
+        "time": "2021-03-12T09:25:44+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "ipl\\Sql\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Icinga PHP Library - SQL abstraction layer",
+        "homepage": "https://github.com/Icinga/ipl-sql",
+        "keywords": [
+            "database",
+            "sql"
+        ]
+    },
+    {
+        "name": "ipl/stdlib",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Icinga/ipl-stdlib.git",
+            "reference": "1280dd6a0b6f79864e2aa2fa3f021ea4f6f1b65a"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Icinga/ipl-stdlib/zipball/1280dd6a0b6f79864e2aa2fa3f021ea4f6f1b65a",
+            "reference": "1280dd6a0b6f79864e2aa2fa3f021ea4f6f1b65a",
+            "shasum": ""
+        },
+        "require": {
+            "evenement/evenement": "^2",
+            "ext-openssl": "*",
+            "php": ">=5.6.0"
+        },
+        "time": "2021-03-19T13:18:41+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "files": [
+                "src/functions_include.php",
+                "src/polyfill-php71.php",
+                "src/polyfill-php70.php"
+            ],
+            "psr-4": {
+                "ipl\\Stdlib\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "ipl Standard Library"
+    },
+    {
+        "name": "ipl/validator",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Icinga/ipl-validator.git",
+            "reference": "c1d16ab1b646635f5ae60cb87bd59a9db225cb2e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Icinga/ipl-validator/zipball/c1d16ab1b646635f5ae60cb87bd59a9db225cb2e",
+            "reference": "c1d16ab1b646635f5ae60cb87bd59a9db225cb2e",
+            "shasum": ""
+        },
+        "require": {
+            "ipl/stdlib": ">=0.5.0",
+            "php": ">=5.6.0"
+        },
+        "time": "2020-11-17T15:45:42+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "ipl\\Validator\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Icinga PHP Library - Common validators and validator chaining",
+        "homepage": "https://github.com/Icinga/ipl-validator"
+    },
+    {
+        "name": "ipl/web",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Icinga/ipl-web.git",
+            "reference": "adcf8643cd787c234a80b0a54f47f4345f9cd247"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Icinga/ipl-web/zipball/adcf8643cd787c234a80b0a54f47f4345f9cd247",
+            "reference": "adcf8643cd787c234a80b0a54f47f4345f9cd247",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "fortawesome/font-awesome": "^5.13",
+            "ipl/html": ">=0.3.0",
+            "ipl/stdlib": ">=0.9.0",
+            "php": ">=5.6.0"
+        },
+        "time": "2021-03-19T15:22:38+00:00",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "ipl\\Web\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "Icinga PHP Library - Web Components",
+        "homepage": "https://github.com/Icinga/ipl-web",
+        "keywords": [
+            "html"
+        ]
+    },
+    {
+        "name": "psr/http-message",
+        "version": "1.0.1",
+        "version_normalized": "1.0.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/http-message.git",
+            "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+            "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-08-06T14:39:51+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Http\\Message\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for HTTP messages",
+        "homepage": "https://github.com/php-fig/http-message",
+        "keywords": [
+            "http",
+            "http-message",
+            "psr",
+            "psr-7",
+            "request",
+            "response"
+        ]
+    },
+    {
+        "name": "ralouphie/getallheaders",
+        "version": "3.0.3",
+        "version_normalized": "3.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ralouphie/getallheaders.git",
+            "reference": "120b605dfeb996808c31b6477290a714d356e822"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/120b605dfeb996808c31b6477290a714d356e822",
+            "reference": "120b605dfeb996808c31b6477290a714d356e822",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6"
+        },
+        "require-dev": {
+            "php-coveralls/php-coveralls": "^2.1",
+            "phpunit/phpunit": "^5 || ^6.5"
+        },
+        "time": "2019-03-08T08:55:37+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "src/getallheaders.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Ralph Khattar",
+                "email": "ralph.khattar@gmail.com"
+            }
+        ],
+        "description": "A polyfill for getallheaders."
+    }
+]
