@@ -1,5 +1,8 @@
-Icinga Web 2 - IPL
-==================
+# DEPRECATED
+
+The currently maintained version of the IPL project can be found [here](https://github.com/Icinga/ipl).
+
+## Icinga Web 2 - IPL
 
 This module ships the new Icinga PHP library. Please download the latest
 release and install it like any other module.
