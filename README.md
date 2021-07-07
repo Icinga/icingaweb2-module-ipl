@@ -3,7 +3,7 @@
 The currently maintained version of the IPL project can be found [here](https://github.com/Icinga/ipl).
 
 💡 Some modules (e.g. the Director) still depend on this module. This module is still available for usage, so if you're on Icinga Web 2 v2.8.2 or lower please install v0.5.0.  
-💡 However, if you're on Icinga Web 2 v2.9.0 or higher, this module is **not** required anymore. Not even for the Director.
+💡 However, if you're on Icinga Web 2 v2.9.0 or higher, this module is **not** required anymore. Unless you're running the Director in version 1.8.0 or lower, v1.8.1 also doesn't require this module.
 
 ## Icinga Web 2 - IPL
 
